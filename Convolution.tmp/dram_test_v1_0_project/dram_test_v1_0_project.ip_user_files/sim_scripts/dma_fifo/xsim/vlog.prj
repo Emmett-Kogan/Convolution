@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../dram_test_v1_0_project.gen/sources_1/ip/dma_fifo/sim/dma_fifo.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

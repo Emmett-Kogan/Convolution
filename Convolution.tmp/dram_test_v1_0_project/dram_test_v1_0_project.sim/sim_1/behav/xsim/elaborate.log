@@ -1,0 +1,56 @@
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto fc37cf8b47bd43959c63bc452b8d175c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot wrapper_tb_behav xil_defaultlib.wrapper_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling package xil_defaultlib.config_pkg
+Compiling package xil_defaultlib.user_pkg
+Compiling package xil_defaultlib.math_custom
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_sync_stag...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_a...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_p...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module xil_defaultlib.mmap_request_fifo
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_a...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_p...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module xil_defaultlib.mmap_data_fifo
+Compiling architecture bhv of entity xil_defaultlib.wrapper_memory_map [wrapper_memory_map_default]
+Compiling architecture bhv of entity xil_defaultlib.memory_map [memory_map_default]
+Compiling architecture default of entity xil_defaultlib.user_app [user_app_default]
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_a...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module xil_defaultlib.dma_fifo
+Compiling architecture transitional of entity xil_defaultlib.handshake [handshake_default]
+Compiling architecture bhv of entity xil_defaultlib.shrinker_fifo [\shrinker_fifo(input_width=32,ou...]
+Compiling architecture str of entity xil_defaultlib.width_change_fifo [\width_change_fifo(input_width=3...]
+Compiling architecture str of entity xil_defaultlib.dram_rd [\dram_rd(output_width=16,size_wi...]
+Compiling architecture bhv of entity xil_defaultlib.expander_fifo [\expander_fifo(input_width=16,ou...]
+Compiling architecture str of entity xil_defaultlib.width_change_fifo [\width_change_fifo(input_width=1...]
+Compiling architecture str of entity xil_defaultlib.dram_wr [\dram_wr(input_width=16,size_wid...]
+Compiling architecture sync_read of entity xil_defaultlib.ram [\ram(num_words=32768,word_width=...]
+Compiling architecture ff of entity xil_defaultlib.delay [\delay(cycles=9,width=32)(0,-1)\]
+Compiling architecture ff of entity xil_defaultlib.delay [\delay(cycles=1,width=1)(0,-1)\]
+Compiling architecture ff of entity xil_defaultlib.delay [\delay(cycles=9,width=1)(0,-1)\]
+Compiling architecture default of entity xil_defaultlib.dram_model [\dram_model(num_words=32768,word...]
+Compiling architecture ff of entity xil_defaultlib.delay [\delay(cycles=0,width=32)(0,-1)\]
+Compiling architecture ff of entity xil_defaultlib.delay [\delay(cycles=0,width=1)(0,-1)\]
+Compiling architecture default of entity xil_defaultlib.dram_model [\dram_model(num_words=32768,word...]
+Compiling architecture default of entity xil_defaultlib.wrapper [wrapper_default]
+Compiling architecture behavior of entity xil_defaultlib.wrapper_tb
+Built simulation snapshot wrapper_tb_behav

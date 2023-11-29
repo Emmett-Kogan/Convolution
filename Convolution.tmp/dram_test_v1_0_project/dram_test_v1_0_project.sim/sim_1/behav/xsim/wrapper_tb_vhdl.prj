@@ -1,0 +1,22 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../ip_repo/dram_test_1.0/src/config_pkg.vhd" \
+"../../../../../../ip_repo/dram_test_1.0/src/user_pkg.vhd" \
+"../../../../../../ip_repo/dram_test_1.0/src/wrapper_memory_map.vhd" \
+"../../../../../../ip_repo/dram_test_1.0/src/memory_map.vhd" \
+"../../../../../../ip_repo/dram_test_1.0/src/user_app.vhd" \
+"../../../../../../ip_repo/dram_test_1.0/src/math_custom.vhd" \
+"../../../../../../ip_repo/dram_test_1.0/src/ram.vhd" \
+"../../../../../../ip_repo/dram_test_1.0/src/delay.vhd" \
+"../../../../../../ip_repo/dram_test_1.0/src/dram_model.vhd" \
+"../../../../../../ip_repo/dram_test_1.0/src/wrapper.vhd" \
+"../../../../../../ip_repo/dram_test_1.0/src/handshake.vhdp" \
+"../../../../../../ip_repo/dram_test_1.0/src/width_change_fifo.vhdp" \
+"../../../../../../ip_repo/dram_test_1.0/src/dram_rd.vhdp" \
+"../../../../../../ip_repo/dram_test_1.0/src/dram_wr.vhdp" \
+"../../../../../../ip_repo/dram_test_1.0/src/expander_fifo.vhdp" \
+"../../../../../../ip_repo/dram_test_1.0/src/shrinker_fifo.vhdp" \
+"../../../../../../ip_repo/dram_test_1.0/src/wrapper_tb.vhd" \
+
+# Do not sort compile order
+nosort
