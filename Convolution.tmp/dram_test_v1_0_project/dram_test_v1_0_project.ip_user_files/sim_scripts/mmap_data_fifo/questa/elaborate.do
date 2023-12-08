@@ -1,1 +1,0 @@
-vopt +acc=npr -l elaborate.log -L xil_defaultlib -L xpm -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.mmap_data_fifo xil_defaultlib.glbl -o mmap_data_fifo_opt

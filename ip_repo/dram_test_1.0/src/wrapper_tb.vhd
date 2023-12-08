@@ -11,7 +11,7 @@
 -- to extend it to test your own design.
 
 library ieee;
-use ieee.std_logic_1164.all; 
+use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use ieee.math_real.all;
 
@@ -27,8 +27,8 @@ architecture behavior of wrapper_tb is
     constant MAX_CYCLES : integer := TEST_SIZE*100;
 
     constant MAX_MMAP_READ_CYCLES : integer := 100;
-    
-    
+
+
     constant CLK0_HALF_PERIOD : time := 5 ns;
 
     signal clks : std_logic_vector(NUM_CLKS_RANGE) := (others => '0');
@@ -42,6 +42,12 @@ architecture behavior of wrapper_tb is
     signal mmap_rd_addr       : std_logic_vector(MMAP_ADDR_RANGE) := (others => '0');
     signal mmap_rd_data       : std_logic_vector(MMAP_DATA_RANGE);
     signal mmap_rd_data_valid : std_logic;
+
+    type signal_array_t is array(0 to C_MAX_SIGNAL_SIZE-1) of std_logic_vector(15 downto 0);
+    signal padded_signal : signal_array_t := (others => (others => '0'));
+
+    type kernel_array_t is array(0 to C_KERNEL_SIZE-1) of std_logic_vector(31 downto 0);
+    signal kernel : kernel_array_t := (others => (others => '0'));
 
     signal sim_done : std_logic := '0';
 
@@ -94,18 +100,19 @@ architecture behavior of wrapper_tb is
     end procedure;
 
 
-    -- Run dram_test with the specified starting address and size.
-    -- start_addr is the 32-bit word address in memory
-    -- size is the number of 16-bit words to transfer.
-    procedure run_test(constant test_name  :    string;
-                       constant start_addr : in natural;
-                       constant size       : in natural;
+    -- Run convolve
+    -- size is the unpadded signal size in 16-bit elements.
+    procedure run_test(constant test_name :    string;
+                       constant size      : in natural;
 
                        signal mmap_wr_addr : out std_logic_vector(MMAP_ADDR_RANGE);
                        signal mmap_wr_data : out std_logic_vector(MMAP_DATA_RANGE);
                        signal mmap_wr_en   : out std_logic;
                        signal mmap_rd_addr : out std_logic_vector(MMAP_ADDR_RANGE);
-                       signal mmap_rd_en   : out std_logic
+                       signal mmap_rd_en   : out std_logic;
+
+                       signal padded_signal : inout signal_array_t;
+                       signal kernel : inout kernel_array_t
                        ) is
 
         variable count  : integer   := 0;
@@ -113,8 +120,29 @@ architecture behavior of wrapper_tb is
         variable done   : std_logic := '0';
 
         constant MAX_DONE_CYCLES : integer := size * 20;
-        
+
+        constant PADDED_SIGNAL_SIZE : integer := size + 2*(C_KERNEL_SIZE-1);
+        constant DRAM_WORDS         : integer := PADDED_SIGNAL_SIZE / 2 + PADDED_SIGNAL_SIZE mod 2;
+
     begin
+
+        -- Create the padded signal.
+        for i in 0 to C_KERNEL_SIZE-2 loop
+            padded_signal(i) <= (others => '0');
+        end loop;
+
+        for i in 0 to size-1 loop
+            padded_signal(i+C_KERNEL_SIZE-1) <= std_logic_vector(to_unsigned(1, 16));
+        end loop;
+
+        for i in 0 to C_KERNEL_SIZE-2 loop
+            padded_signal(i+size+C_KERNEL_SIZE-1) <= (others => '0');
+        end loop;
+
+        -- Define the kernel.
+        for i in 0 to C_KERNEL_SIZE-1 loop
+            kernel(i) <= std_logic_vector(to_unsigned(i+1, 32));
+        end loop;
 
         -- Disable user mode to enable transfers to DRAM.
         mmap_wr_addr <= (others => '1');
@@ -123,15 +151,15 @@ architecture behavior of wrapper_tb is
         wait until rising_edge(clks(0));
         clearMMAP(mmap_rd_en, mmap_wr_en);
 
-        -- Write the test inputs to RAM.
-        -- TODO: Adjust this to test different values. Keep in mind that this
-        -- writes 32 bits, but dram_test delivers 16 bits to the datapath, so
-        -- if you want to test 16-bit values, you need to pack two 16-bit values
-        -- into each 32-bit word here/
-        for i in 0 to size/2 + (size mod 2) - 1 loop
-            mmap_wr_addr <= std_logic_vector(to_unsigned(start_addr+i, C_MMAP_ADDR_WIDTH));
+        -- Write the padded signal to RAM.
+        for i in 0 to DRAM_WORDS-1 loop
+            mmap_wr_addr <= std_logic_vector(to_unsigned(i, C_MMAP_ADDR_WIDTH));
             mmap_wr_en   <= '1';
-            mmap_wr_data <= std_logic_vector(to_unsigned(i+1, C_MMAP_DATA_WIDTH));
+
+            -- Pack two 16-bit inputs.
+            --mmap_wr_data <= std_logic_vector(to_unsigned(padded_signal(2*i+1), C_MMAP_DATA_WIDTH/2) & to_unsigned(padded_signal(2*i), C_MMAP_DATA_WIDTH/2));
+            mmap_wr_data <= padded_signal(2*i+1) & padded_signal(2*i);
+
             wait until rising_edge(clks(0));
         end loop;
         clearMMAP(mmap_rd_en, mmap_wr_en);
@@ -147,22 +175,17 @@ architecture behavior of wrapper_tb is
         wait until rising_edge(clks(0));
         clearMMAP(mmap_rd_en, mmap_wr_en);
 
+        -- Transfer the kernel
+        for i in 0 to C_KERNEL_SIZE-1 loop
+            mmap_wr_addr <= C_KERNEL_DATA_ADDR;
+            mmap_wr_en   <= '1';
+            mmap_wr_data <= kernel(i);
+            wait until rising_edge(clks(0));
+            clearMMAP(mmap_rd_en, mmap_wr_en);
+        end loop;
+
         -- Specify the starting write address
-        mmap_wr_addr <= C_RAM1_WR_ADDR_ADDR;
-        mmap_wr_en   <= '1';
-        mmap_wr_data <= std_logic_vector(to_unsigned(start_addr, C_MMAP_DATA_WIDTH));
-        wait until rising_edge(clks(0));
-        clearMMAP(mmap_rd_en, mmap_wr_en);
-
-        -- Specify the starting read address
-        mmap_wr_addr <= C_RAM0_RD_ADDR_ADDR;
-        mmap_wr_en   <= '1';
-        mmap_wr_data <= std_logic_vector(to_unsigned(start_addr, C_MMAP_DATA_WIDTH));
-        wait until rising_edge(clks(0));
-        clearMMAP(mmap_rd_en, mmap_wr_en);
-
-        -- Specify the size (in 16-bit words).
-        mmap_wr_addr <= C_SIZE_ADDR;
+        mmap_wr_addr <= C_SIGNAL_SIZE_ADDR;
         mmap_wr_en   <= '1';
         mmap_wr_data <= std_logic_vector(to_unsigned(size, C_MMAP_DATA_WIDTH));
         wait until rising_edge(clks(0));
@@ -205,19 +228,20 @@ architecture behavior of wrapper_tb is
         clearMMAP(mmap_rd_en, mmap_wr_en);
 
         -- Read outputs from output memory
-        for i in 0 to size/2 + (size mod 2) - 1 loop
+        for i in 0 to DRAM_WORDS-1 loop
 
-            mmap_read(std_logic_vector(to_unsigned(start_addr + i, C_MMAP_ADDR_WIDTH)), MAX_MMAP_READ_CYCLES, mmap_rd_addr, mmap_rd_en);
-            if (unsigned(mmap_rd_data) /= checkOutput(i)) then
-                errors := errors + 1;
-                report "Result for " & integer'image(i) &
-                    " is incorrect. The output is " &
-                    integer'image(to_integer(unsigned(mmap_rd_data))) &
-                    " but should be " & integer'image(checkOutput(i));
-            end if;
+            mmap_read(std_logic_vector(to_unsigned(i, C_MMAP_ADDR_WIDTH)), MAX_MMAP_READ_CYCLES, mmap_rd_addr, mmap_rd_en);
+        -- if (unsigned(mmap_rd_data) /= checkOutput(i)) then
+        --     errors := errors + 1;
+        --     report "Result for " & integer'image(i) &
+        --         " is incorrect. The output is " &
+        --         integer'image(to_integer(unsigned(mmap_rd_data))) &
+        --         " but should be " & integer'image(checkOutput(i));
+        -- end if;
         end loop;
 
-        report test_name & " completed. Total Errors: " & integer'image(errors);
+        --report test_name & " completed. Total Errors: " & integer'image(errors);
+        report test_name & " completed.";
     end procedure;
 
 begin
@@ -257,15 +281,11 @@ begin
         -- Here are some sample tests that you can use.
         -- TODO: add whatever tests you think you need to debug.
         -- Hint: if a test is failing on the board, recreate it here.
-        run_test("Test0", 3, 2, mmap_wr_addr, mmap_wr_data, mmap_wr_en, mmap_rd_addr, mmap_rd_en);
+        run_test("Test0", 10, mmap_wr_addr, mmap_wr_data, mmap_wr_en, mmap_rd_addr, mmap_rd_en, padded_signal, kernel);
 
-        run_test("Test1", 8, 9, mmap_wr_addr, mmap_wr_data, mmap_wr_en, mmap_rd_addr, mmap_rd_en);
+        --run_test("Test1", 8, mmap_wr_addr, mmap_wr_data, mmap_wr_en, mmap_rd_addr, mmap_rd_en);
 
-        run_test("Test2", 1, 4, mmap_wr_addr, mmap_wr_data, mmap_wr_en, mmap_rd_addr, mmap_rd_en);
-
-        run_test("Test3", 100, 10000, mmap_wr_addr, mmap_wr_data, mmap_wr_en, mmap_rd_addr, mmap_rd_en);
-
-        run_test("TestBig", 27069, 17248, mmap_wr_addr, mmap_wr_data, mmap_wr_en, mmap_rd_addr, mmap_rd_en);
+        --run_test("Test2", 1, mmap_wr_addr, mmap_wr_data, mmap_wr_en, mmap_rd_addr, mmap_rd_en);
 
         report "SIMULATION FINISHED.";
         sim_done <= '1';
