@@ -1,0 +1,1236 @@
+m255
+K4
+z2
+!s11e MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/johnn/Documents/School/reconfig/convo_test/ip_repo/dram_test_1.0/src
+Eadd_tree
+Z0 w1702169204
+Z1 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 143
+Z5 dC:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src
+Z6 8C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/add_tree.vhd
+Z7 FC:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/add_tree.vhd
+l0
+Z8 L35 1
+VQ]aJ3>2i]zlE`Mz`Z^XhR0
+!s100 BNJcK1HL1<?dJ?9J]cj^O3
+Z9 OV;C;2020.1;71
+32
+!s110 1702173862
+!i10b 1
+Z10 !s108 1702173862.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/add_tree.vhd|
+Z12 !s107 C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/add_tree.vhd|
+!i113 1
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
+Asigned_arch
+Z15 DEx4 work 5 delay 0 22 3W7hG?OS7[1UBJEk5ANRX1
+R1
+R2
+R3
+R4
+Z16 DEx4 work 8 add_tree 0 22 Q]aJ3>2i]zlE`Mz`Z^XhR0
+!i122 143
+l267
+L202 153
+VP>7Dli:nTFKCXQD9n`jV03
+!s100 8XzBkKn5LYEm`>9Yi;[822
+R9
+32
+Z17 !s110 1702173863
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Aunsigned_arch
+R15
+R1
+R2
+R3
+R4
+R16
+!i122 143
+l112
+L47 153
+V6PeGLLSjMjMVRU4NiZ1Pk1
+!s100 F@RMnbIhGK2Pe3^>:i5[50
+R9
+32
+R17
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Eaddr_gen
+Z18 w1702169654
+R2
+R3
+R4
+!i122 144
+R5
+Z19 8C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/addr_gen.vhd
+Z20 FC:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/addr_gen.vhd
+l0
+L6 1
+V_4e291enYO:`_<4HT3Vb92
+!s100 S[n^[1HQ62C49NzPZl_ZJ0
+R9
+32
+R17
+!i10b 1
+Z21 !s108 1702173863.000000
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/addr_gen.vhd|
+Z23 !s107 C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/addr_gen.vhd|
+!i113 1
+R13
+R14
+Abhv
+R2
+R3
+R4
+Z24 DEx4 work 8 addr_gen 0 22 _4e291enYO:`_<4HT3Vb92
+!i122 144
+l24
+L17 72
+VHL=<`nQNeBX5dA5f;KBYo3
+!s100 PAib1fIk83gV8iab`1ij=3
+R9
+32
+R17
+!i10b 1
+R21
+R22
+R23
+!i113 1
+R13
+R14
+Eclip
+R0
+Z25 DPx4 work 11 math_custom 0 22 `?33ekQjYfoH^FVPnSn^b2
+R1
+R2
+R3
+R4
+!i122 145
+R5
+Z26 8C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/clip.vhd
+Z27 FC:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/clip.vhd
+l0
+Z28 L10 1
+VWnan2IVaReJ68JQWVIl0O3
+!s100 =MaYZ:9n[YGbUUnD^XP>A1
+R9
+32
+R17
+!i10b 1
+R21
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/clip.vhd|
+Z30 !s107 C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/clip.vhd|
+!i113 1
+R13
+R14
+Abhv
+R25
+R1
+R2
+R3
+R4
+Z31 DEx4 work 4 clip 0 22 Wnan2IVaReJ68JQWVIl0O3
+!i122 145
+l24
+L22 6
+VR1``1K=fBiKQ77=:4[98:3
+!s100 bZiS@3C7H`LYZ8JWc[U`a2
+R9
+32
+R17
+!i10b 1
+R21
+R29
+R30
+!i113 1
+R13
+R14
+Eclip_tb
+R0
+R25
+R1
+R2
+R3
+R4
+!i122 146
+R5
+Z32 8C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/clip_tb.vhd
+Z33 FC:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/clip_tb.vhd
+l0
+R28
+V^AURbcTRC_7e;0lWT?k<L3
+!s100 oPkkMQKlQa6@D11NXdVkH3
+R9
+32
+R17
+!i10b 1
+R21
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/clip_tb.vhd|
+Z35 !s107 C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/clip_tb.vhd|
+!i113 1
+R13
+R14
+Atb
+R31
+R25
+R1
+R2
+R3
+R4
+DEx4 work 7 clip_tb 0 22 ^AURbcTRC_7e;0lWT?k<L3
+!i122 146
+l18
+L13 57
+VoAlj?QWbzQn??ISAa?5>Y2
+!s100 cNjlMAji^iES=H4Hc60BJ1
+R9
+32
+R17
+!i10b 1
+R21
+R34
+R35
+!i113 1
+R13
+R14
+Pconfig_pkg
+R2
+R3
+R4
+!i122 147
+R0
+R5
+8C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/config_pkg.vhd
+FC:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/config_pkg.vhd
+l0
+L8 1
+VAPJD5C043HbH07hOmA=Z_1
+!s100 ]iZSW2GSIM@AMj58_QCkG3
+R9
+32
+R17
+!i10b 1
+R21
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/config_pkg.vhd|
+!s107 C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/config_pkg.vhd|
+!i113 1
+R13
+R14
+Ecounter
+Z36 w1702163493
+Z37 DPx4 work 8 user_pkg 0 22 9a2o<?V9]4a4o9X_Jnn^n2
+Z38 DPx4 work 10 config_pkg 0 22 APJD5C043HbH07hOmA=Z_1
+R2
+R3
+R4
+!i122 148
+R5
+Z39 8C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/counter.vhd
+Z40 FC:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/counter.vhd
+l0
+L12 1
+VS=;F;cXoo^33e=]^?jWT]2
+!s100 oEMfDQPCGfDT>NXMRBAbc2
+R9
+32
+Z41 !s110 1702173864
+!i10b 1
+R21
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/counter.vhd|
+Z43 !s107 C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/counter.vhd|
+!i113 1
+R13
+R14
+Adefault
+R37
+R38
+R2
+R3
+R4
+Z44 DEx4 work 7 counter 0 22 S=;F;cXoo^33e=]^?jWT]2
+!i122 148
+l34
+L25 49
+V98@bD[Q^P76cMad@mS^^=3
+!s100 Inl7?iEFQnVzK=M^diTP41
+R9
+32
+R41
+!i10b 1
+R21
+R42
+R43
+!i113 1
+R13
+R14
+Abhv
+R2
+R3
+R4
+DEx4 work 7 counter 0 22 Q]ZD=;T?mo3Lj=XG=ch832
+!i122 122
+l25
+L19 50
+V3oo[HaAYZD^l7U66nGkLY1
+!s100 PZJ470?MInM<IM7MD:P6A0
+R9
+32
+!s110 1702171455
+!i10b 1
+!s108 1702171455.000000
+R42
+R43
+!i113 1
+R13
+R14
+w1702169541
+Edelay
+R0
+R3
+R4
+!i122 149
+R5
+Z45 8C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/delay.vhd
+Z46 FC:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/delay.vhd
+l0
+L33 1
+V3W7hG?OS7[1UBJEk5ANRX1
+!s100 FAnn^FIa:A=6L^l6A4=Ud1
+R9
+32
+R41
+!i10b 1
+Z47 !s108 1702173864.000000
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/delay.vhd|
+Z49 !s107 C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/delay.vhd|
+!i113 1
+R13
+R14
+Aff
+R3
+R4
+R15
+!i122 149
+l73
+L60 69
+VWEOb12EI2=D0zPNLADeN[3
+!s100 V>]0HM9LWXn:>P0hi_PWf0
+R9
+32
+R41
+!i10b 1
+R47
+R48
+R49
+!i113 1
+R13
+R14
+Edram_addr_gen
+Z50 w1702169205
+R2
+R3
+R4
+!i122 150
+R5
+Z51 8C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/dram_addr_gen.vhd
+Z52 FC:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/dram_addr_gen.vhd
+l0
+R8
+VCZPHdYY;bk;nLhdQnMdAY2
+!s100 FAYY6cR<n8[OB9Xf=<Z7f1
+R9
+32
+R41
+!i10b 1
+R47
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/dram_addr_gen.vhd|
+Z54 !s107 C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/dram_addr_gen.vhd|
+!i113 1
+R13
+R14
+Abhv
+R2
+R3
+R4
+DEx4 work 13 dram_addr_gen 0 22 CZPHdYY;bk;nLhdQnMdAY2
+!i122 150
+l57
+L49 58
+VT[<OHd@Y1R?N?W6jQIo8b2
+!s100 l>BP`cGS`hJ=oJjRamD?D2
+R9
+32
+R41
+!i10b 1
+R47
+R53
+R54
+!i113 1
+R13
+R14
+Edram_model
+R50
+R1
+R25
+R2
+R3
+R4
+!i122 151
+R5
+Z55 8C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/dram_model.vhd
+Z56 FC:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/dram_model.vhd
+l0
+Z57 L15 1
+VhF=2:l4gWQkYTKoAK6;;B3
+!s100 :2oC1RoB6b8b0V0K7>59k0
+R9
+32
+R41
+!i10b 1
+R47
+Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/dram_model.vhd|
+Z59 !s107 C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/dram_model.vhd|
+!i113 1
+R13
+R14
+Adefault
+R15
+Z60 DEx4 work 3 ram 0 22 Z<3k9z:cFaFiSAU8Oo<0E3
+R1
+R25
+R2
+R3
+R4
+Z61 DEx4 work 10 dram_model 0 22 hF=2:l4gWQkYTKoAK6;;B3
+!i122 151
+l61
+L46 104
+VMd06oLG7V?T]5KCofFDf=1
+!s100 bPQRCBKS6Ua0ZVj<gD;b93
+R9
+32
+R41
+!i10b 1
+R47
+R58
+R59
+!i113 1
+R13
+R14
+Edram_rd
+Z62 w1702173267
+R2
+R3
+R4
+!i122 152
+R5
+Z63 8C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/dram_rd.vhd
+Z64 FC:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/dram_rd.vhd
+l0
+L59 1
+V9SaRKk[jojh4hR983@C3J1
+!s100 _ZG^`^hG_>75>0R0BSCmn0
+R9
+32
+R41
+!i10b 1
+R47
+Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/dram_rd.vhd|
+Z66 !s107 C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/dram_rd.vhd|
+!i113 1
+R13
+R14
+Astr
+Z67 DEx4 work 9 size_conv 0 22 <_oRj6YmX2MfDhN:hQHjQ3
+Z68 DEx4 work 9 handshake 0 22 0hZ=[6GF>bCNUo[Ya9Y0F0
+Z69 DEx4 work 3 reg 0 22 zZP?[AEFnK@mEjmdS[0bS0
+R37
+R38
+R44
+Z70 DEx4 work 6 fifo32 0 22 CF4R@OUQ:[Q@b4ZD?aO8E2
+R24
+R2
+R3
+R4
+DEx4 work 7 dram_rd 0 22 9SaRKk[jojh4hR983@C3J1
+!i122 152
+l109
+L91 122
+VBHhBz_QD8aSJHFG?^]Eze3
+!s100 hWc[TC8hb:;WJMBAXF@RR1
+R9
+32
+R41
+!i10b 1
+R47
+R65
+R66
+!i113 1
+R13
+R14
+Efifo32
+Z71 w1702169546
+R3
+R4
+!i122 153
+R5
+Z72 8C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/fifo32.vhd
+Z73 FC:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/fifo32.vhd
+l0
+L4 1
+VCF4R@OUQ:[Q@b4ZD?aO8E2
+!s100 TQO^N>?Z7zIbeNld8=bIX3
+R9
+32
+R41
+!i10b 1
+R47
+Z74 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/fifo32.vhd|
+Z75 !s107 C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/fifo32.vhd|
+!i113 1
+R13
+R14
+Astr
+R3
+R4
+R70
+!i122 153
+l35
+L18 34
+VBbPH9aiH9`z__b3TEMdOI3
+!s100 7_BmPOY0?<Dz?Cf>oc9Fg1
+R9
+32
+R41
+!i10b 1
+R47
+R74
+R75
+!i113 1
+R13
+R14
+Ehandshake
+Z76 w1701912953
+R37
+R2
+R38
+R3
+R4
+!i122 154
+R5
+Z77 8C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/handshake.vhd
+Z78 FC:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/handshake.vhd
+l0
+L18 1
+V0hZ=[6GF>bCNUo[Ya9Y0F0
+!s100 zd_1]=WzWUA@ld4aN<flM3
+R9
+32
+Z79 !s110 1702173865
+!i10b 1
+Z80 !s108 1702173865.000000
+Z81 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/handshake.vhd|
+Z82 !s107 C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/handshake.vhd|
+!i113 1
+R13
+R14
+Atransitional
+R15
+R37
+R2
+R38
+R3
+R4
+R68
+!i122 154
+l44
+L33 121
+VK:05XKMbYCeYN]Q=TDkVo1
+!s100 Fa?^]cWgWP];iJUYDSKRd3
+R9
+32
+R79
+!i10b 1
+R80
+R81
+R82
+!i113 1
+R13
+R14
+Pmath_custom
+R1
+R2
+R3
+R4
+!i122 155
+R50
+R5
+Z83 8C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/math_custom.vhd
+Z84 FC:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/math_custom.vhd
+l0
+L11 1
+V`?33ekQjYfoH^FVPnSn^b2
+!s100 GQj2k^O]IDVHhD52B=^E83
+R9
+32
+b1
+R79
+!i10b 1
+R80
+Z85 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/math_custom.vhd|
+Z86 !s107 C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/math_custom.vhd|
+!i113 1
+R13
+R14
+Bbody
+R25
+R1
+R2
+R3
+R4
+!i122 155
+l0
+L57 1
+VHmIANEo_YKTjiBMkO3^X33
+!s100 CRNP9>4Li2RUd`;4izdND3
+R9
+32
+R79
+!i10b 1
+R80
+R85
+R86
+!i113 1
+R13
+R14
+Ememory_map
+Z87 w1702171106
+R37
+R38
+R2
+R3
+R4
+!i122 156
+R5
+Z88 8C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/memory_map.vhd
+Z89 FC:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/memory_map.vhd
+l0
+Z90 L16 1
+VWn<Rz9]a7zlS1Y6fjO3iU1
+!s100 g[ooU`I:3O7=WJ@c1jGBh3
+R9
+32
+R79
+!i10b 1
+R80
+Z91 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/memory_map.vhd|
+Z92 !s107 C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/memory_map.vhd|
+!i113 1
+R13
+R14
+Abhv
+R37
+R38
+R2
+R3
+R4
+Z93 DEx4 work 10 memory_map 0 22 Wn<Rz9]a7zlS1Y6fjO3iU1
+!i122 156
+l51
+L44 92
+VGHkzTQkXJ5kKl3Y2]Mhjj2
+!s100 ?HnYK2nfQm>1X?mH8XHec1
+R9
+32
+R79
+!i10b 1
+R80
+R91
+R92
+!i113 1
+R13
+R14
+Emult_add_tree
+R50
+R25
+R1
+R2
+R3
+R4
+!i122 157
+R5
+Z94 8C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/mult_add_tree.vhd
+Z95 FC:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/mult_add_tree.vhd
+l0
+Z96 L20 1
+VdJQ<UJi_1[aE5LgXg]PS`2
+!s100 WmUT>=@_SWnQ;N4g<`:ak3
+R9
+32
+R79
+!i10b 1
+R80
+Z97 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/mult_add_tree.vhd|
+Z98 !s107 C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/mult_add_tree.vhd|
+!i113 1
+R13
+R14
+Asigned_arch
+R16
+R25
+R1
+R2
+R3
+R4
+Z99 DEx4 work 13 mult_add_tree 0 22 dJQ<UJi_1[aE5LgXg]PS`2
+!i122 157
+l103
+L90 52
+Vja4DTOg3MQd_fndM5;`H`1
+!s100 m8`A;2bfCQ1J6OPA^:_X13
+R9
+32
+R79
+!i10b 1
+R80
+R97
+R98
+!i113 1
+R13
+R14
+Aunsigned_arch
+R16
+R25
+R1
+R2
+R3
+R4
+R99
+!i122 157
+l49
+L36 52
+V4^5IjQQ6zeAWM2g5=mHMV0
+!s100 f<[SSggE[^4Ka3VDFCM6m2
+R9
+32
+R79
+!i10b 1
+R80
+R97
+R98
+!i113 1
+R13
+R14
+Eram
+R50
+R2
+R3
+R4
+!i122 158
+R5
+Z100 8C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/ram.vhd
+Z101 FC:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/ram.vhd
+l0
+L45 1
+VZ<3k9z:cFaFiSAU8Oo<0E3
+!s100 7:]N4^oFLb_j=e8hT]fJ41
+R9
+32
+Z102 !s110 1702173866
+!i10b 1
+R80
+Z103 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/ram.vhd|
+Z104 !s107 C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/ram.vhd|
+!i113 1
+R13
+R14
+Async_read
+R2
+R3
+R4
+R60
+!i122 158
+l122
+L117 19
+VnQ2KiMiWc`bFam`ch4]m_3
+!s100 I][0KfiOoGoS`T=bliEZX1
+R9
+32
+R102
+!i10b 1
+R80
+R103
+R104
+!i113 1
+R13
+R14
+Async_read_during_write
+R2
+R3
+R4
+R60
+!i122 158
+l96
+L90 22
+VFM>5hUFlF_0BO`QbMB]B;0
+!s100 mPCRdjNLVTRiTo6]g8H9=2
+R9
+32
+R102
+!i10b 1
+R80
+R103
+R104
+!i113 1
+R13
+R14
+Aasync_read
+R2
+R3
+R4
+R60
+!i122 158
+l71
+L66 19
+Vc_jEJjlbPoJB6dA>Q<<Vm1
+!s100 Ybo3jGKb7?bPE47hPW_zC3
+R9
+32
+R102
+!i10b 1
+R80
+R103
+R104
+!i113 1
+R13
+R14
+Ereg
+Z105 w1702169779
+R2
+R3
+R4
+!i122 159
+R5
+Z106 8C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/reg.vhd
+Z107 FC:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/reg.vhd
+l0
+L5 1
+VzZP?[AEFnK@mEjmdS[0bS0
+!s100 ^OSX1PXTPR9EaDHWM0aGi0
+R9
+32
+R102
+!i10b 1
+Z108 !s108 1702173866.000000
+Z109 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/reg.vhd|
+Z110 !s107 C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/reg.vhd|
+!i113 1
+R13
+R14
+Aarch
+R2
+R3
+R4
+R69
+!i122 159
+l16
+L15 13
+V@dDzWO0aJR?U@16kVLcGJ3
+!s100 NGenADZ<Vlkzck5CiN<9F0
+R9
+32
+R102
+!i10b 1
+R108
+R109
+R110
+!i113 1
+R13
+R14
+Esize_conv
+Z111 w1702169551
+R2
+R3
+R4
+!i122 160
+R5
+Z112 8C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/size_conv.vhd
+Z113 FC:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/size_conv.vhd
+l0
+L8 1
+V<_oRj6YmX2MfDhN:hQHjQ3
+!s100 nmHo5gJI@iEH<e81Y9AGl1
+R9
+32
+R102
+!i10b 1
+R108
+Z114 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/size_conv.vhd|
+Z115 !s107 C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/size_conv.vhd|
+!i113 1
+R13
+R14
+Abhv
+R2
+R3
+R4
+R67
+!i122 160
+l16
+L15 14
+VN8MC_HT<:eP0iSbfQUZa12
+!s100 :[ePG6NdKIEV5izbPYUa>0
+R9
+32
+R102
+!i10b 1
+R108
+R114
+R115
+!i113 1
+R13
+R14
+Esmart_buffer
+R50
+R37
+R38
+R25
+R1
+R2
+R3
+R4
+!i122 135
+R5
+Z116 8C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/smart_buffer.vhd
+Z117 FC:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/smart_buffer.vhd
+l0
+L13 1
+V`TOLG`T7cG1o`^5?bB7Bf3
+!s100 M<iEDgkilCF>Xn<G;f9N:1
+R9
+32
+Z118 !s110 1702171459
+!i10b 1
+!s108 1702171458.000000
+Z119 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/smart_buffer.vhd|
+Z120 !s107 C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/smart_buffer.vhd|
+!i113 1
+R13
+R14
+Abhv
+Z121 DPx4 work 8 user_pkg 0 22 IM@Z5FZ`k7mck7zhbgCD11
+R38
+R25
+R1
+R2
+R3
+R4
+Z122 DEx4 work 12 smart_buffer 0 22 `TOLG`T7cG1o`^5?bB7Bf3
+!i122 24
+l46
+L41 64
+Vd]jnem?zX_F9@cBi_15F?1
+!s100 @A[W0NP=Z8`maJzUQo9?h3
+R9
+32
+!s110 1702170739
+!i10b 1
+!s108 1702170739.000000
+R119
+R120
+!i113 1
+R13
+R14
+Esmart_buffer_tb
+R50
+R37
+R38
+R25
+R1
+R2
+R3
+R4
+!i122 136
+R5
+Z123 8C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/smart_buffer_tb.vhd
+Z124 FC:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/smart_buffer_tb.vhd
+l0
+R57
+V=?@7Y[8?]lDLh6fU=EPKo0
+!s100 QGmXP8C]I<WJ5ZlP7kaR=0
+R9
+32
+R118
+!i10b 1
+!s108 1702171459.000000
+Z125 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/smart_buffer_tb.vhd|
+Z126 !s107 C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/smart_buffer_tb.vhd|
+!i113 1
+R13
+R14
+Atb
+R122
+R121
+R38
+R25
+R1
+R2
+R3
+R4
+DEx4 work 15 smart_buffer_tb 0 22 =?@7Y[8?]lDLh6fU=EPKo0
+!i122 25
+l34
+L18 88
+VF?m`nSS3?aJSK_cNgm6V^0
+!s100 ^1V=PUO=f:Uk@0;2PhcGZ2
+R9
+32
+!s110 1702170740
+!i10b 1
+!s108 1702170740.000000
+R125
+R126
+!i113 1
+R13
+R14
+Euser_app
+Z127 w1702171164
+R37
+R2
+R38
+R3
+R4
+!i122 161
+R5
+Z128 8C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/user_app.vhd
+Z129 FC:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/user_app.vhd
+l0
+R28
+V]TMo@3F:Y:iSJ7iB;d0@>1
+!s100 eJLN^jcKhYl3]>DZh_5Df0
+R9
+32
+Z130 !s110 1702173870
+!i10b 1
+Z131 !s108 1702173870.000000
+Z132 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/user_app.vhd|
+Z133 !s107 C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/user_app.vhd|
+!i113 1
+R13
+R14
+Adefault
+R93
+R37
+R2
+R38
+R3
+R4
+Z134 DEx4 work 8 user_app 0 22 ]TMo@3F:Y:iSJ7iB;d0@>1
+!i122 161
+l56
+L50 50
+VXMH_^>]VnJ@<8cQ8QDPRb3
+!s100 lG=TdRUNhLANj6gm2H^2f3
+R9
+32
+R130
+!i10b 1
+R131
+R132
+R133
+!i113 1
+R13
+R14
+Puser_pkg
+R38
+R2
+R3
+R4
+!i122 162
+w1702171154
+R5
+8C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/user_pkg.vhd
+FC:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/user_pkg.vhd
+l0
+R28
+V9a2o<?V9]4a4o9X_Jnn^n2
+!s100 jlECA[2LPXj<GaER5R?T60
+R9
+32
+R130
+!i10b 1
+R131
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/user_pkg.vhd|
+!s107 C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/user_pkg.vhd|
+!i113 1
+R13
+R14
+Ewrapper
+R50
+R37
+R38
+R2
+R3
+R4
+!i122 163
+R5
+Z135 8C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/wrapper.vhd
+Z136 FC:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/wrapper.vhd
+l0
+R90
+VGIHB>a>3ZO2RbB2Z5azGm1
+!s100 >I=:jzK=JMR2@4Cf4783b2
+R9
+32
+Z137 !s110 1702173871
+!i10b 1
+Z138 !s108 1702173871.000000
+Z139 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/wrapper.vhd|
+Z140 !s107 C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/wrapper.vhd|
+!i113 1
+R13
+R14
+Adefault
+R1
+R25
+R61
+R134
+Z141 DEx4 work 18 wrapper_memory_map 0 22 Ynck^@[8A5A:Ik<dinmlT2
+R37
+R38
+R2
+R3
+R4
+Z142 DEx4 work 7 wrapper 0 22 GIHB>a>3ZO2RbB2Z5azGm1
+!i122 163
+l143
+L31 309
+VJRhe@__Dmb=9dnn7J:jn>0
+!s100 hE9I9lG80D8m^5YTVEW5i2
+R9
+32
+R137
+!i10b 1
+R138
+R139
+R140
+!i113 1
+R13
+R14
+Ewrapper_memory_map
+R50
+R38
+R2
+R3
+R4
+!i122 164
+R5
+Z143 8C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/wrapper_memory_map.vhd
+Z144 FC:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/wrapper_memory_map.vhd
+l0
+R96
+VYnck^@[8A5A:Ik<dinmlT2
+!s100 VS9ESbJabzR6I1TD:__Li1
+R9
+32
+R137
+!i10b 1
+R138
+Z145 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/wrapper_memory_map.vhd|
+Z146 !s107 C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/wrapper_memory_map.vhd|
+!i113 1
+R13
+R14
+Abhv
+R38
+R2
+R3
+R4
+R141
+!i122 164
+l122
+L57 201
+V@mORmX:D^5`Jj[cJM`bB52
+!s100 ]of0FN0I279dKGZ>SHoim1
+R9
+32
+R137
+!i10b 1
+R138
+R145
+R146
+!i113 1
+R13
+R14
+Ewrapper_tb
+Z147 w1702171391
+R37
+R38
+R1
+R2
+R3
+R4
+!i122 165
+R5
+Z148 8C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/wrapper_tb.vhd
+Z149 FC:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/wrapper_tb.vhd
+l0
+L21 1
+VK`Xin]lAKZ^S>GFjDA7gV3
+!s100 :o^LnE8hm3FVkU_eLZef53
+R9
+32
+R137
+!i10b 1
+R138
+Z150 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/wrapper_tb.vhd|
+Z151 !s107 C:/Users/johnn/Documents/School/reconfig/test_convolution/Convolution/ip_repo/dram_test_1.0/src/wrapper_tb.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R142
+R37
+R38
+R1
+R2
+R3
+R4
+Z152 DEx4 work 10 wrapper_tb 0 22 K`Xin]lAKZ^S>GFjDA7gV3
+!i122 165
+l223
+Z153 L24 252
+Z154 V_Zfnhc[8UKZgdk=J>2A0A3
+Z155 !s100 EL5::2z^h[I2mOJ_>jnfh2
+R9
+32
+R137
+!i10b 1
+R138
+R150
+R151
+!i113 1
+R13
+R14
